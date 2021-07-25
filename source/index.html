@@ -11,7 +11,7 @@
           <img src="#" width="190" height="38" alt="Логотип продукта Кэт энерджи">
         </a>
         <nav class="main-navigation">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--active"><a>Главная</a></li>
             <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -36,15 +36,13 @@
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__title">Похудение</h3>
-              <img class="features__image" src="#" width="50" height="53" alt="Изображение стройного кота">
               <p class="features__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="features__link features__link--climming" href="#">Каталог slim</a>
+              <a class="features__link" href="#">Каталог slim</a>
             </li>
             <li class="features__item">
               <h3 class="features__title">Набор массы</h3>
-              <img class="features__image" src="#" width="50" height="53" alt="Изображение мускулистого кота">
               <p class="features__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="features__link features__link--gain" href="#">Каталог pro</a>
+              <a class="features__link" href="#">Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -55,19 +53,15 @@
           <h2 class="description__title">Как это работает</h2>
           <ul class="description__list">
             <li class="description__item">
-              <img class="description__image" src="#" width="60" height="60" alt="Изображение листа растения">
               <p class="description__text">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="description__item">
-              <img class="description__image" src="#" width="60" height="60" alt="Изображение жидкости в емкости">
               <p class="description__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="description__item">
-              <img class="description__image" src="#" width="60" height="60" alt="Изображение столовых предметов">
               <p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="description__item">
-              <img class="description__image" src="#" width="60" height="60" alt="Изображение настольных часов с циферблатом">
               <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ul>
@@ -90,11 +84,16 @@
           </dl>
           <p class="example__results">Затраты на питание: 15 000 РУБ.</p>
           <img class="example__image" src="#" width="311" height="232" alt="Изображение сидящего двухцветного кота имеющего явный лишний вес">
-          <p class="example__switcher cat-switcher">
-            <input class="cat-switcher__range" type="range" name="example-range" id="example-range" min="1" max="10" value="5">
-            <label class="cat-switcher__label cat-switcher__label--before" for="example-range">Было</label>
-            <label class="cat-switcher__label cat-switcher__label--after" for="example-range">Стало</label>
-          </p>
+          <div class="example__switcher cat-switcher">
+            <div class="cat-switcher__controls">
+              <div class="cat-switcher__scale">
+                <div class="cat-switcher__bar"></div>
+              </div>
+              <div class="cat-switcher__toggle"></div>
+            </div>
+            <p class="cat-switcher__label cat-switcher__label--before">Было</p>
+            <p class="cat-switcher__label cat-switcher__label--after">Стало</p>
+          </div>
         </div>
       </section>
 
@@ -109,7 +108,9 @@
 
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <img class="page-footer__logo" src="#" width="128" height="24" alt="Текстовый логотип торговой марки Кэт энерджи">
+          <a class="page-footer__logo">
+            <img src="#" width="128" height="24" alt="Текстовый логотип торговой марки Кэт энерджи">
+          </a>
           <ul class="page-footer__list">
             <li class="page-footer__item">
               <a class="page-footer__link page-footer__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
