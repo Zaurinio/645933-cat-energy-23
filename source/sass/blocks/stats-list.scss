@@ -1,0 +1,16 @@
+.stats-list {
+  margin: 0;
+}
+
+.stats-list__number {
+  font-family: $oswald-font;
+
+  @include text-set(24px, 24px, 400);
+}
+
+.stats-list__description {
+  margin: 0;
+
+  @include text-set(12px, 12px, 400);
+  color: $color-dark-grey;
+}

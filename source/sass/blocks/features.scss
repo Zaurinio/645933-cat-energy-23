@@ -1,0 +1,28 @@
+.features__list {
+  @include space-reset;
+}
+
+.features__item {
+  background-color: $color-basic-grey;
+}
+
+.features__title {
+  margin: 0;
+  font-family: $oswald-font;
+
+  @include text-set(24px, 37px, 400);
+  text-transform: uppercase;
+}
+
+.features__text {
+  margin: 0;
+  color: $color-dark-grey;
+}
+
+.features__link {
+  font-family: $oswald-font;
+
+  @include text-set(16px, 16px, 400);
+  @include link-reset(uppercase, none);
+  color: $color-basic-black;
+}

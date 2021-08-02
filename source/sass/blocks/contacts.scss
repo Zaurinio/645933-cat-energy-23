@@ -1,0 +1,20 @@
+.contacts {
+  padding-top: 28px;
+  padding-bottom: 26px;
+}
+
+.contacts__slogan {
+  margin: 0;
+  font-family: $oswald-font;
+
+  @include text-set(16px, 20px, 400);
+  text-transform: uppercase;
+  color: $contacts-black;
+}
+
+.contacts__address {
+  margin: 0;
+
+  @include text-set(14px, 20px, 400);
+  color: $color-dark-grey;
+}
