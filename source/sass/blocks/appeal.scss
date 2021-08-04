@@ -18,12 +18,14 @@
 
   @include text-set(14px, 14px, 400);
   color: $color-basic-white;
+  text-transform: uppercase;
 }
 
 .appeal__link {
   display: block;
   font-family: $oswald-font;
   color: $color-basic-white;
-  text-decoration: none;
   background-color: $color-basic-green;
+
+  @include link-reset (none, uppercase);
 }

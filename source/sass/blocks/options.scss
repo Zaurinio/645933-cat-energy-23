@@ -24,8 +24,6 @@
 }
 
 .options__element {
-  font-family: $oswald-font;
-
   @include text-set(14px, 14px, 400);
   color: $color-dark-grey;
 }

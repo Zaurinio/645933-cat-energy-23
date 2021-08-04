@@ -23,6 +23,6 @@
   font-family: $oswald-font;
 
   @include text-set(16px, 16px, 400);
-  @include link-reset(uppercase, none);
+  @include link-reset(none, uppercase);
   color: $color-basic-black;
 }

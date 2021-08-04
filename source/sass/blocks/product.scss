@@ -16,6 +16,9 @@
 }
 
 .product__button {
+  font-family: $oswald-font;
+
+  @include text-set(16px, 20px, 400);
   @include link-reset(none, uppercase);
   background-color: $color-basic-green;
   color: $color-basic-white;

@@ -17,7 +17,10 @@
 }
 
 .to-all__button {
+  font-family: $oswald-font;
+
   @include text-set(16px, 20px, 400);
   @include link-reset(none, uppercase);
   color: $color-dark-grey;
+  background-color: $color-basic-grey;
 }
