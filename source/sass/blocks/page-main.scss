@@ -1,0 +1,7 @@
+.page-main__title {
+  margin: 0;
+  margin-top: 27px;
+  font-family: $oswald-font;
+
+  @include text-set(36px, 36px, 400);
+}

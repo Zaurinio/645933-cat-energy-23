@@ -1,0 +1,8 @@
+.cat-switcher__button {
+  border: none;
+  background-color: inherit;
+  font-family: $oswald-font;
+
+  @include text-set(16px, 20px, 400);
+  text-transform: uppercase;
+}

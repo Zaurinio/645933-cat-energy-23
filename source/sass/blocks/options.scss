@@ -1,0 +1,39 @@
+.options {
+  padding-top: 25px;
+}
+
+.options__title {
+  margin: 0;
+  margin-bottom: 36px;
+  font-family: $oswald-font;
+
+  @include text-set(24px, 24px, 400);
+}
+
+.options__list {
+  @include space-reset;
+}
+
+.options__product {
+  margin: 0;
+  font-family: $oswald-font;
+
+  @include text-set(16px, 16px, 400);
+  text-transform: uppercase;
+  color: $color-special-dark-grey;
+}
+
+.options__element {
+  @include text-set(14px, 14px, 400);
+  color: $color-dark-grey;
+}
+
+.options__button {
+  font-family: $oswald-font;
+
+  @include text-set(16px, 20px, 400);
+  color: $color-basic-white;
+
+  @include link-reset(none, uppercase);
+  background-color: $color-basic-green;
+}

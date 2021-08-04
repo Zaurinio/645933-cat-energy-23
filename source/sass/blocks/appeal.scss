@@ -1,0 +1,31 @@
+.appeal {
+  padding-top: 27px;
+  padding-bottom: 22px;
+  background-color: $color-basic-green;
+}
+
+.appeal__title {
+  margin: 0;
+  font-family: $oswald-font;
+
+  @include text-set(36px, 36px, 400);
+  color: $color-basic-white;
+}
+
+.appeal__slogan {
+  margin: 0;
+  font-family: $oswald-font;
+
+  @include text-set(14px, 14px, 400);
+  color: $color-basic-white;
+  text-transform: uppercase;
+}
+
+.appeal__link {
+  display: block;
+  font-family: $oswald-font;
+  color: $color-basic-white;
+  background-color: $color-basic-green;
+
+  @include link-reset (none, uppercase);
+}

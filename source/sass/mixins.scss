@@ -1,0 +1,15 @@
+@mixin space-reset {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin text-set($size, $height, $weight) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin link-reset($decoration, $transform) {
+  text-decoration: $decoration;
+  text-transform: $transform;
+}
