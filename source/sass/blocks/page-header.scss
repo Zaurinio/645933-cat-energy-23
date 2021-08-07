@@ -1,4 +1,26 @@
 .page-header {
   padding-top: 10px;
   padding-bottom: 22px;
+  min-height: 264px; //временно для сетки
+
+  @media (min-width: $tablet-width) {
+    min-height: 78px; //временно для сетки
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 112px; //временно для сетки
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-header__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

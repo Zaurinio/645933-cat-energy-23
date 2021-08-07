@@ -1,6 +1,26 @@
 .site-list {
   @include space-reset;
   @include text-set(20px, 20px, 500);
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 440px; //временно для сетки
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+  }
+}
+
+.site-list__item {
+  margin-right: 34px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .site-list__link {

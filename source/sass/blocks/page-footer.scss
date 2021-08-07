@@ -5,10 +5,25 @@
 }
 
 .page-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+
   @include space-reset;
+  list-style: none;
 }
 
 .page-footer__developer {
   color: $color-dark-grey;
   text-decoration: none;
+}
+
+.page-footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
