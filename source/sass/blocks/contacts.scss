@@ -24,7 +24,7 @@
 }
 
 .contacts__map {
-  height: 362px;//временно для сетки
+  min-height: 362px;//временно для сетки
   background-color: $color-basic-green; //временно для сетки
 
   @media (min-width: $tablet-width) {

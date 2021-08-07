@@ -5,11 +5,11 @@
   height: 480px; // временно для сетки
 
   @media (min-width: $tablet-width) {
-    height: 872px; // временно для сетки
+    min-height: 872px; // временно для сетки
   }
 
   @media (min-width: $desktop-width) {
-    height: 587px; // временно для сетки
+    min-height: 587px; // временно для сетки
   }
 }
 
