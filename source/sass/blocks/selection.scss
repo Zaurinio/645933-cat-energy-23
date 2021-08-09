@@ -1,6 +1,22 @@
+.selection {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+  }
+}
+
 .selection__title {
-  margin-top: 37px;
+  margin: 0;
   margin-bottom: 39px;
   font-family: $oswald-font;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
 }

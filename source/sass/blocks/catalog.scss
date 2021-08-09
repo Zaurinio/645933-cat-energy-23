@@ -1,3 +1,25 @@
 .catalog__list {
+  list-style: none;
+
   @include space-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+}
+
+.catalog__item {
+  min-height: 184px;//временно для сетки
+
+  @media (min-width: $tablet-width) {
+    min-height: 430px;//временно для сетки
+  }
 }

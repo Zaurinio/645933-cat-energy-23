@@ -4,4 +4,36 @@
   font-family: $oswald-font;
 
   @include text-set(36px, 36px, 400);
+
+  &--catalog {
+    margin-bottom: 41px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 85px;
+    }
+  }
+
+  &--form {
+    margin-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 56px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 74px;
+  }
 }
