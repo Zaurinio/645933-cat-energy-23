@@ -1,3 +1,7 @@
+.product__content {
+  display: flex;
+}
+
 .product__title {
   margin: 0;
 }
@@ -16,6 +20,7 @@
 }
 
 .product__button {
+  display: block;
   font-family: $oswald-font;
 
   @include text-set(16px, 20px, 400);
