@@ -10,7 +10,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
+      margin-bottom: 69px;
     }
   }
 
@@ -26,7 +26,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
+      margin-bottom: 69px;
     }
   }
 
@@ -168,16 +168,18 @@
   }
 }
 
-.form__container {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 69px;
+.form__wrapper {
+  &--entry {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 69px;
+    }
   }
-}
 
-.form__submit {
-  @media (min-width: $tablet-width) {
-    display: flex;
+  &--submit {
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 }

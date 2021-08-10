@@ -14,10 +14,12 @@
 }
 
 .options__wrapper {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 896px 245px;
-    column-gap: 79px;
+  &--content {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 896px 245px;
+      column-gap: 79px;
+    }
   }
 }
 
@@ -34,7 +36,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
-    grid-column: 1/-1;
   }
 }
 
