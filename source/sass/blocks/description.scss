@@ -1,13 +1,30 @@
 .description {
   padding-top: 27px;
-  padding-bottom: 42px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 0;
+  }
 }
 
 .description__title {
   margin: 0;
+  margin-bottom: 40px;
   font-family: $oswald-font;
 
   @include text-set(36px, 40px, 400);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    @include text-set (60px, 60px, 400);
+  }
 }
 
 .description__list {
@@ -15,35 +32,135 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    padding-right: 75px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 153px;
+    column-gap: 135px;
     row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 280px;
-    column-gap: 0;
+    column-gap: 79px;
     row-gap: 0;
+    padding-right: 0;
   }
 }
 
 .description__item {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 26px;
+  padding-left: 80px;
 
   &:last-child {
     margin-bottom: 0;
   }
-  min-height: 60px; //временно для сетки
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--ingredients::before {
+    background-image: url("../img/description/icon_sheet.png");
+  }
+
+  &--form::before {
+    background-image: url("../img/description/icon_substance.png");
+  }
+
+  &--application::before {
+    background-image: url("../img/description/icon_cutlery.png");
+  }
+
+  &--results::before {
+    background-image: url("../img/description/icon_scales.png");
+  }
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding-left: 0;
+    padding: 151px 0 57px 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+
+    &--ingredients::before {
+      background-image: url("../img/description/icon_sheet_tablet.png");
+    }
+
+    &--form::before {
+      background-image: url("../img/description/icon_substance_tablet.png");
+    }
+
+    &--application::before {
+      background-image: url("../img/description/icon_cutlery_tablet.png");
+    }
+
+    &--results::before {
+      background-image: url("../img/description/icon_scales_tablet.png");
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      height: 280px;
+      top: 40px;
+      z-index: -1;
+    }
+
+    &--ingredients::after {
+      width: 71px;
+      background-image: url("../img/description/icon_one_tablet.png");
+      left: 126px;
+    }
+
+    &--form::after {
+      width: 113px;
+      background-image: url("../img/description/icon_two_tablet.png");
+      left: 123px;
+    }
+
+    &--application::after {
+      width: 112px;
+      background-image: url("../img/description/icon_three_tablet.png");
+      left: 124px;
+    }
+
+    &--results::after {
+      width: 121px;
+      background-image: url("../img/description/icon_four_tablet.png");
+      left: 123px;
+    }
   }
 }
 
 .description__text {
   margin: 0;
   color: $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    @include text-set (16px, 24px, 400);
+  }
+}
+
+
+.description__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }

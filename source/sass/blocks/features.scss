@@ -1,46 +1,195 @@
+.features {
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+  }
+}
+
 .features__list {
   @include space-reset;
   list-style: none;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .features__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px 20px 22px;
   background-color: $color-basic-grey;
-  min-height: 266px; //временно для сетки
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
-    min-height: 372px; //временно для сетки
+    padding: 77px 316px 57px 52px;
+    margin-bottom: 30px;
+
+    &--slim::before {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 211px;
+      background-image: url("../img/features/icon_cat_slim_tablet.png");
+      background-repeat: no-repeat;
+      top: 81px;
+      right: 62px;
+    }
+
+    &--gain::before {
+      content: "";
+      position: absolute;
+      width: 268px;
+      height: 200px;
+      background-image: url("../img/features/icon_cat_gain_tablet.png");
+      background-repeat: no-repeat;
+      top: 91px;
+      right: 28px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 374px; //временно для сетки
-    width: 570px;
+    margin-bottom: 0;
+    padding: 77px 51px 59px 52px;
+
+    &--slim::before,
+    &--gain::before {
+      display: none;
+    }
   }
 }
 
 .features__title {
+  position: relative;
   margin: 0;
+  margin-bottom: 29px;
+  padding-left: 69px;
   font-family: $oswald-font;
 
   @include text-set(24px, 37px, 400);
   text-transform: uppercase;
+
+  &--slim::before {
+    content: "";
+    width: 50px;
+    height: 53px;
+    position: absolute;
+    top: -9px;
+    left: 0;
+    background-image: url("../img/features/icon_cat_slim_mobile.png");
+  }
+
+  &--gain::before {
+    content: "";
+    width: 67px;
+    height: 50px;
+    position: absolute;
+    top: -9px;
+    left: -7px;
+    background-image: url("../img/features/icon_cat_gain_mobile.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    padding-left: 0;
+
+    @include text-set(36px, 36px, 400);
+    &--slim::before,
+    &--gain::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+
+    &--slim::before {
+      display: block  ;
+      content: "";
+      width: 100px;
+      height: 106px;
+      position: absolute;
+      top: -36px;
+      left: 0;
+      background-image: url("../img/features/icon_cat_slim_desktop.png");
+    }
+
+    &--gain::before {
+      display: block  ;
+      content: "";
+      width: 134px;
+      height: 100px;
+      position: absolute;
+      top: -30px;
+      left: -20px;
+      background-image: url("../img/features/icon_cat_gain_desktop.png");
+    }
+  }
 }
 
 .features__text {
   margin: 0;
+  margin-bottom: 19px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $color-features-border;
   color: $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+    padding-bottom: 0;
+
+    @include text-set(16px, 24px, 400);
+    color: $color-basic-black;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .features__link {
+  position: relative;
+  padding-right: 47px;
   font-family: $oswald-font;
 
   @include text-set(16px, 16px, 400);
   @include link-reset(none, uppercase);
   color: $color-basic-black;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 11px;
+    background-image: url("../img/features/icon_features_arrow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 7px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include text-set (20px, 30px, 400);
+    padding-right: 57px;
+
+    &::after {
+      top: 9px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 59px;
+  }
 }
