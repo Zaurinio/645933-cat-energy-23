@@ -11,8 +11,11 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    padding-bottom: 24px;
-    background-image: linear-gradient(to bottom, $color-basic-white 57.5%, $color-basic-grey 57.5%, $color-basic-grey 100%);
+    padding-bottom: 25px;
+    background-color: $color-bg-body;
+    background-image: linear-gradient(to left, $color-bg-example calc(50% - 325px), $color-basic-grey calc(50% - 325px), $color-basic-grey 100%);
+    background-position: 0 205px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -28,7 +31,7 @@
 
 .example__info {
   @media (min-width: $desktop-width) {
-    padding-right: 135px;
+    padding-right: 155px;
   }
 }
 
@@ -129,49 +132,68 @@
 }
 
 .example__image {
-  &--mobile {
-    width: 311px;
-    height: 232px;
-    margin-bottom: 18px;
-    margin-left: -20px;
-  }
+  width: 311px;
+  height: 232px;
+  margin-bottom: 18px;
+  margin-left: -20px;
 
-  &--tablet {
-    display: none;
-  }
+  // &--mobile {
+  //   width: 311px;
+  //   height: 232px;
+  //   margin-bottom: 18px;
+  //   margin-left: -20px;
+  // }
 
-  &--desktop {
-    display: none;
-  }
+  // &--tablet {
+  //   display: none;
+  // }
+
+  // &--desktop {
+  //   display: none;
+  // }
 
   @media (min-width: $tablet-width) {
-    &--mobile {
-      display: none;
-    }
+    position: relative;
+    margin-bottom: -74px;
+    z-index: 1;
+    width: 708px;
+    height: 620px;
 
-    &--tablet {
-      display: block;
-      position: relative;
-      margin-bottom: -71px;
-      z-index: 1;
-    }
+    // &--mobile {
+    //   display: none;
+    // }
 
-    &--desktop {
-      display: none;
-    }
+    // &--tablet {
+    //   display: block;
+    //   position: relative;
+    //   margin-bottom: -71px;
+    //   z-index: 1;
+    // }
+
+    // &--desktop {
+    //   display: none;
+    // }
   }
 
     @media (min-width: $desktop-width) {
-      &--tablet {
-        display: none;
-      }
+      width: 690px;
+      height: 656px;
+      // display: block;
+      // position: relative;
+      margin-bottom: -105px;
+      margin-right: -40px;
+      z-index: 1;
 
-      &--desktop {
-        display: block;
-        position: relative;
-        margin-bottom: -102px;
-        margin-right: -40px;
-        z-index: 1;
-      }
+      // &--tablet {
+      //   display: none;
+      // }
+
+      // &--desktop {
+      //   display: block;
+      //   position: relative;
+      //   margin-bottom: -102px;
+      //   margin-right: -40px;
+      //   z-index: 1;
+      // }
     }
 }

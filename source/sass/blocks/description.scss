@@ -30,6 +30,7 @@
 .description__list {
   @include space-reset;
   list-style: none;
+  counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
     padding-right: 75px;
@@ -53,6 +54,7 @@
   position: relative;
   margin-bottom: 26px;
   padding-left: 80px;
+  list-style: none;
 
   &:last-child {
     margin-bottom: 0;
@@ -113,36 +115,30 @@
     }
 
     &::after {
-      content: "";
       position: absolute;
-      background-repeat: no-repeat;
-      height: 280px;
-      top: 40px;
       z-index: -1;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      display: inline-block;
+      text-align: center;
+      width: auto;
+      height: 227px;
+      top: 0;
+      right: 0;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $oswald-font;
+      color: #f2f2f2;
     }
 
     &--ingredients::after {
-      width: 71px;
-      background-image: url("../img/description/icon_one_tablet.png");
-      left: 126px;
+      right: 20px;
     }
+  }
 
-    &--form::after {
-      width: 113px;
-      background-image: url("../img/description/icon_two_tablet.png");
-      left: 123px;
-    }
-
-    &--application::after {
-      width: 112px;
-      background-image: url("../img/description/icon_three_tablet.png");
-      left: 124px;
-    }
-
-    &--results::after {
-      width: 121px;
-      background-image: url("../img/description/icon_four_tablet.png");
-      left: 123px;
+  @media (min-width: $desktop-width) {
+    &--ingredients::after {
+      right: 15px;
     }
   }
 }

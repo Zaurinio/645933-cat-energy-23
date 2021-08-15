@@ -64,7 +64,7 @@
   }
 }
 
-.main-navigation--closed ~ .page-header__top .page-header__toggle {
+.page-header__toggle--closed {
   position: relative;
   width: 24px;
   height: 17.5px;
@@ -84,7 +84,7 @@
   }
 }
 
-.main-navigation--opened ~ .page-header__top .page-header__toggle {
+.page-header__toggle--opened {
   position: relative;
   width: 24px;
   height: 18px;

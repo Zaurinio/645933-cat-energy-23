@@ -22,24 +22,60 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-bottom: 5px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
-.page-footer__link .page-footer__image {
-  &--mobile {
-    display: block;
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+// .page-footer__link .page-footer__image {
+//   &--mobile {
+//     display: block;
+
+//     @media (min-width: $tablet-width) {
+//       display: none;
+//     }
+//   }
+
+//   &--tablet {
+//     display: none;
+
+//     @media (min-width: $tablet-width) {
+//       display: block;
+//     }
+//   }
+// }
+
+.page-footer__link--vkontakte .page-footer__image {
+  width: 23px;
+  height: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 18px;
   }
+}
 
-  &--tablet {
-    display: none;
+.page-footer__link--instagram .page-footer__image {
+  width: 16px;
+  height: 16px;
 
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.page-footer__link--facebook .page-footer__image {
+  width: 13px;
+  height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 30px;
   }
 }
 
@@ -60,13 +96,15 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-left: 2%;
+    padding-bottom: 2px;
+    margin-left: 2.6%;
     border: none;
     align-self: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 1.5%;
+    margin-left: 1.6%;
+    padding-top: 2px;
   }
 }
 
