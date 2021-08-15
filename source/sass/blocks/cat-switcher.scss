@@ -60,7 +60,7 @@
 
   @media (min-width: $tablet-width) {
     width: 428px;
-    padding: 4px 0px;
+    padding: 4px 0;
     background-color: transparent;
     border: none;
     border-radius: 0;
@@ -93,8 +93,7 @@
       left: 50%;
       transform: translateX(-50%);
       box-shadow: 0 0 0 2px $color-switcher-border;
-      filter: drop-shadow(0px 1px 3px $color-toggle-shadow);
+      filter: drop-shadow(0 1px 3px $color-toggle-shadow);
     }
   }
 }
-

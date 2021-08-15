@@ -1,5 +1,4 @@
 .page-header {
-
   @media (min-width: $tablet-width) {
     padding-top: 25px;
   }
@@ -25,6 +24,7 @@
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -46,6 +46,7 @@
 
 .page-header__logo-text {
   margin-right: 10px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -116,6 +117,7 @@
   .page-header__logo-image--mobile {
     display: none;
   }
+
   .page-header__logo-image--tablet {
     display: block;
   }
@@ -125,9 +127,11 @@
   .page-header__logo-image--mobile {
     display: none;
   }
+
   .page-header__logo-image--tablet {
     display: none;
   }
+
   .page-header__logo-image--desktop {
     display: block;
   }

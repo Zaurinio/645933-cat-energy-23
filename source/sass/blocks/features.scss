@@ -104,6 +104,7 @@
     padding-left: 0;
 
     @include text-set(36px, 36px, 400);
+
     &--slim::before,
     &--gain::before {
       display: none;
@@ -115,7 +116,7 @@
     margin-bottom: 73px;
 
     &--slim::before {
-      display: block  ;
+      display: block;
       content: "";
       width: 100px;
       height: 106px;
@@ -126,7 +127,7 @@
     }
 
     &--gain::before {
-      display: block  ;
+      display: block;
       content: "";
       width: 134px;
       height: 100px;

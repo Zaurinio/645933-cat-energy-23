@@ -61,6 +61,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+
     @include text-set (16px, 24px, 400);
   }
 
@@ -111,6 +112,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+
     &--text {
       margin-bottom: 9px;
     }
@@ -126,6 +128,7 @@
 
 .example__graphics {
   position: relative;
+
   @media (min-width: $desktop-width) {
     padding-top: 11px;
   }
@@ -175,25 +178,25 @@
     // }
   }
 
-    @media (min-width: $desktop-width) {
-      width: 690px;
-      height: 656px;
-      // display: block;
-      // position: relative;
-      margin-bottom: -105px;
-      margin-right: -40px;
-      z-index: 1;
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 656px;
+    // display: block;
+    // position: relative;
+    margin-bottom: -105px;
+    margin-right: -40px;
+    z-index: 1;
 
-      // &--tablet {
-      //   display: none;
-      // }
+    // &--tablet {
+    //   display: none;
+    // }
 
-      // &--desktop {
-      //   display: block;
-      //   position: relative;
-      //   margin-bottom: -102px;
-      //   margin-right: -40px;
-      //   z-index: 1;
-      // }
-    }
+    // &--desktop {
+    //   display: block;
+    //   position: relative;
+    //   margin-bottom: -102px;
+    //   margin-right: -40px;
+    //   z-index: 1;
+    // }
+  }
 }

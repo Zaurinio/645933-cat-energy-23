@@ -110,15 +110,17 @@
 
 .page-footer__item {
   margin-right: 36px;
+
   &:last-child {
     margin-right: 0;
   }
 
   @media (min-width: $tablet-width) {
     margin-right: 28px;
+
     &:last-child {
-    margin-right: 0;
-  }
+      margin-right: 0;
+    }
   }
 }
 
