@@ -1,26 +1,138 @@
 .page-header {
-  padding-top: 10px;
-  padding-bottom: 22px;
-  min-height: 264px; //временно для сетки
-
   @media (min-width: $tablet-width) {
-    min-height: 78px; //временно для сетки
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 112px; //временно для сетки
+    padding-top: 53px;
+  }
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 1;
+  padding-top: 12px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
 .page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
+
+.page-header__logo {
+  display: block;
+}
+
+.page-header__logo-image--tablet {
+  display: none;
+}
+
+.page-header__logo-image--desktop {
+  display: none;
+}
+
+.page-header__logo-text {
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 
 .page-header__toggle {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.page-header__toggle--closed {
+  position: relative;
+  width: 24px;
+  height: 17.5px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    background-color: $color-basic-black;
+    top: 0;
+    left: 0;
+    box-shadow: 0 7.5px 0 $color-basic-black, 0 15.5px 0 $color-basic-black;
+  }
+}
+
+.page-header__toggle--opened {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    background-color: $color-basic-black;
+    top: 9px;
+    left: -2px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+
+  .page-header__logo-image--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+
+  .page-header__logo-image--tablet {
+    display: none;
+  }
+
+  .page-header__logo-image--desktop {
+    display: block;
   }
 }

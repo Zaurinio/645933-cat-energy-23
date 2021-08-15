@@ -1,49 +1,162 @@
 .description {
   padding-top: 27px;
-  padding-bottom: 42px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 0;
+  }
 }
 
 .description__title {
   margin: 0;
+  margin-bottom: 40px;
   font-family: $oswald-font;
 
   @include text-set(36px, 40px, 400);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+
+    @include text-set (60px, 60px, 400);
+  }
 }
 
 .description__list {
   @include space-reset;
   list-style: none;
+  counter-reset: myCounter;
 
   @media (min-width: $tablet-width) {
+    padding-right: 75px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 153px;
+    column-gap: 135px;
     row-gap: 37px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 280px;
-    column-gap: 0;
+    column-gap: 79px;
     row-gap: 0;
+    padding-right: 0;
   }
 }
 
 .description__item {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 26px;
+  padding-left: 80px;
+  list-style: none;
 
   &:last-child {
     margin-bottom: 0;
   }
-  min-height: 60px; //временно для сетки
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--ingredients::before {
+    background-image: url("../img/description/icon_sheet.png");
+  }
+
+  &--form::before {
+    background-image: url("../img/description/icon_substance.png");
+  }
+
+  &--application::before {
+    background-image: url("../img/description/icon_cutlery.png");
+  }
+
+  &--results::before {
+    background-image: url("../img/description/icon_scales.png");
+  }
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    padding: 151px 0 57px 0;
+    padding-left: 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+
+    &--ingredients::before {
+      background-image: url("../img/description/icon_sheet_tablet.png");
+    }
+
+    &--form::before {
+      background-image: url("../img/description/icon_substance_tablet.png");
+    }
+
+    &--application::before {
+      background-image: url("../img/description/icon_cutlery_tablet.png");
+    }
+
+    &--results::before {
+      background-image: url("../img/description/icon_scales_tablet.png");
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      display: inline-block;
+      text-align: center;
+      width: auto;
+      height: 227px;
+      top: 0;
+      right: 0;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $oswald-font;
+      color: #f2f2f2;
+    }
+
+    &--ingredients::after {
+      right: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--ingredients::after {
+      right: 15px;
+    }
   }
 }
 
 .description__text {
   margin: 0;
   color: $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    @include text-set (16px, 24px, 400);
+  }
+}
+
+
+.description__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
