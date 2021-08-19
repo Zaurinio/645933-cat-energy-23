@@ -49,6 +49,25 @@
   }
 }
 
+.site-list--catalog .site-list__item {
+  @media (min-width: $desktop-width) {
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active::before {
+      background-color: $color-basic-green;
+      bottom: -9px;
+    }
+  }
+}
+
+.site-list--catalog {
+  padding-top: 4px;
+}
+
 .site-list__link {
   display: block;
   padding: 22px 22px 23px;
@@ -69,6 +88,14 @@
   @media (min-width: $desktop-width) {
     @include text-set (20px, 30px, 400);
     color: $color-basic-white;
+
+    &--catalog {
+      color: $contacts-black;
+    }
+
+    &--form {
+      color: $contacts-black;
+    }
   }
 }
 

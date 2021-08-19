@@ -1,6 +1,9 @@
 .page-header {
+  border-bottom: 1px solid $color-catalog-border;
+
   @media (min-width: $tablet-width) {
     padding-top: 25px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,39 +1,56 @@
 .page-main__title {
   margin: 0;
-  margin-top: 27px;
   font-family: $oswald-font;
 
   @include text-set(36px, 36px, 400);
 
   &--catalog {
-    margin-bottom: 41px;
+    padding-top: 27px;
+    padding-bottom: 40px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 90px;
+      padding-top: 64px;
+      padding-bottom: 161px;
+
+      @include text-set (60px, 60px, 400);
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 85px;
+      padding-top: 74px;
+      padding-bottom: 164px;
     }
   }
 
   &--form {
-    margin-bottom: 37px;
+    padding-top: 27px;
+    padding-bottom: 38px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      padding-top: 64px;
+      padding-bottom: 54px;
+
+      @include text-set (60px, 60px, 400);
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 56px;
+      padding-top: 74px;
+      padding-bottom: 56px;
     }
   }
+}
+
+.page-main__wrapper--form {
+  width: $mobile-width;
+  padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin-top: 64px;
+    width: 707px;
+    padding: 0 35px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 74px;
+    width: $desktop-width;
+    padding: 0 55px;
   }
 }

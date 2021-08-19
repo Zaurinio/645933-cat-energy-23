@@ -1,6 +1,6 @@
 .appeal {
   padding-top: 27px;
-  background-image: url("../img/appeal/image_can_mobile.png"), linear-gradient(to bottom, $color-bg-appeal, $color-bg-appeal), url("../img/appeal/bg_mobile.jpg");
+  background-image: url("../img/appeal/image_can_mobile.png"), linear-gradient(to bottom, $filter-bg-green, $filter-bg-green), url("../img/appeal/bg_mobile.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: auto, 100% 302px, auto 302px;
   background-position: bottom 43px center, top left, calc(50% - 35px) top;
@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -112px;
-    background-image: url("../img/appeal/image_can_desktop.png"), linear-gradient(to right, $color-bg-body 50%, $color-bg-appeal 50%, $color-bg-appeal 100%), url("../img/appeal/bg_desktop.jpg");
+    background-image: url("../img/appeal/image_can_desktop.png"), linear-gradient(to right, $color-bg-body 50%, $filter-bg-green 50%, $filter-bg-green 100%), url("../img/appeal/bg_desktop.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: left calc(50% + 113px) bottom 54px, left top, calc(50% + 522px) top;
     background-size: auto, auto, auto;

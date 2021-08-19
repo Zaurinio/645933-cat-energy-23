@@ -1,6 +1,14 @@
 .contacts {
   position: relative;
 
+  &--catalog {
+    background-color: $color-basic-grey;
+  }
+
+  &--form {
+    background-color: $color-basic-grey;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 97px;
     padding-bottom: 104px;
@@ -87,6 +95,10 @@
   background-color: $color-bg-body;
   padding-top: 28px;
   padding-bottom: 26px;
+
+  &--catalog {
+    background-color: transparent;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 63px 41px 58px;

@@ -12,11 +12,33 @@
 
 .selection__title {
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
   font-family: $oswald-font;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+
+    @include text-set (20px, 30px, 400);
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 66px;
+  }
+}
+
+.selection__wrapper--form {
+  width: $mobile-width;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    padding: 0 35px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 55px;
   }
 }
