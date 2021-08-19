@@ -233,6 +233,7 @@
   @media (min-width: $desktop-width) {
     padding: 186px 43px 42px 41px;
     text-align: center;
+    background-image: linear-gradient(to right, $filter-bg-green 0%, $filter-bg-green 100%), url("../img/options/bg_gift_desktop.jpg");
 
     &::before {
       left: 50%;
