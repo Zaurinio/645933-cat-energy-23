@@ -1,3 +1,17 @@
+.catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0 55px;
+    margin: 0 auto;
+  }
+}
+
 .catalog__list {
   list-style: none;
 
@@ -6,20 +20,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    column-gap: 58px;
+    row-gap: 139px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    row-gap: 63px;
-  }
-}
-
-.catalog__item {
-  min-height: 184px;//временно для сетки
-
-  @media (min-width: $tablet-width) {
-    min-height: 430px;//временно для сетки
+    row-gap: 143px;
   }
 }
