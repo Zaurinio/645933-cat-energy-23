@@ -3,13 +3,13 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 86px;
+    padding-top: 89px;
     padding-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 95px;
-    padding-bottom: 86px;
+    padding-bottom: 85px;
   }
 }
 
@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
+    margin-bottom: 56px;
     padding-left: 0;
     box-shadow: 36px 0 0 0 $color-basic-white, -38px 0 0 0 $color-basic-white;
     transform: translateY(-24px);
@@ -203,6 +203,11 @@
   background-image: linear-gradient(to right, $filter-bg-green 0%, $filter-bg-green 100%), url("../img/options/bg_gift.jpg");
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $filter-bg-green 0%, $filter-bg-green 100%), url("../img/options/bg_gift@2x.jpg");
+    background-size: 279px 289px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -220,6 +225,11 @@
     background-image: linear-gradient(to right, $filter-bg-green 0%, $filter-bg-green 100%), url("../img/options/bg_gift_tablet.jpg");
     text-align: left;
 
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $filter-bg-green 0%, $filter-bg-green 100%), url("../img/options/bg_gift_tablet@2x.jpg");
+      background-size: 707px 200px;
+    }
+
     &::before {
       width: 80px;
       height: 83px;
@@ -234,6 +244,11 @@
     padding: 186px 43px 42px 41px;
     text-align: center;
     background-image: linear-gradient(to right, $filter-bg-green 0%, $filter-bg-green 100%), url("../img/options/bg_gift_desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, $filter-bg-green 0%, $filter-bg-green 100%), url("../img/options/bg_gift_desktop@2x.jpg");
+      background-size: 245px 289px;
+    }
 
     &::before {
       left: 50%;

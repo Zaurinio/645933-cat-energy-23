@@ -2,8 +2,13 @@
   background-color: $color-basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding-top: 55px;
+    padding-top: 52px;
     padding-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 53px;
   }
 }
 
@@ -90,7 +95,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  padding: 20px 82px 20px 73px;
+  padding: 20px 82px 19px 73px;
   list-style: none;
   border-bottom: 1px solid $color-features-border;
 
@@ -133,6 +138,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 7px;
   }
 }
 

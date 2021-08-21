@@ -7,6 +7,10 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="icon" href="favicon_cat.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -204,7 +208,11 @@
             </div>
           </div>
           <div class="example__graphics">
-            <img class="example__image example__image--mobile" src="../img/example/cat_before_mobile.png" alt="Изображение сидящего двухцветного кота имеющего явный лишний вес">
+            <picture>
+              <source media="(min-width: 1330px)" srcset="img/example/cat_before-after_desktop.png 1x, img/example/cat_before-after_desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/example/cat_before-after_tablet.png 1x, img/example/cat_before-after_tablet@2x.png 2x">
+              <img class="example__image example__image--mobile" src="img/example/cat_before_mobile.png" srcset="img/example/cat_before_mobile@2x.png 2x" alt="Изображение сидящего двухцветного кота имеющего явный лишний вес">
+            </picture>
             <div class="example__switcher cat-switcher">
               <div class="cat-switcher__controls">
                 <div class="cat-switcher__scale">

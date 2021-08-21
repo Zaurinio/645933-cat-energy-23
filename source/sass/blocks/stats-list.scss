@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    margin-bottom: 45px;
+    margin-bottom: 49px;
   }
 }
 
@@ -29,7 +29,7 @@
 }
 
 .stats-list__number {
-  padding: 14px 5px 17px 5px;
+  padding: 14px 5px 15px 5px;
   border: 1px solid $color-description-border;
   text-align: center;
   font-family: $oswald-font;
@@ -41,6 +41,10 @@
     padding-bottom: 20px;
 
     @include text-set (30px, 37px, 400);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 18px;
   }
 }
 
