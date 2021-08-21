@@ -6,7 +6,7 @@
   background-position: bottom 43px center, top left, calc(50% - 35px) top;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/appeal/image_can_mobile@2x.png"), linear-gradient(to bottom, $filter-bg-green, $filter-bg-green), url("../img/appeal/bg_mobile@2x.jpg");;
+    background-image: url("../img/appeal/image_can_mobile@2x.png"), linear-gradient(to bottom, $filter-bg-green, $filter-bg-green), url("../img/appeal/bg_mobile@2x.jpg");
     background-size: 280px auto, 100% 302px, auto 302px;
   }
 
