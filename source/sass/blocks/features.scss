@@ -24,7 +24,7 @@
 .features__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 30px 20px 22px;
+  padding: 29px 20px 20px;
   background-color: $color-basic-grey;
 
   &:last-child {
@@ -46,6 +46,13 @@
       right: 62px;
     }
 
+    @media (min-resolution: 2dppx) {
+      &--slim::before {
+        background-image: url("../img/features/icon_cat_slim_tablet@2x.png");
+        background-size: 200px 211px;
+      }
+    }
+
     &--gain::before {
       content: "";
       position: absolute;
@@ -55,6 +62,13 @@
       background-repeat: no-repeat;
       top: 91px;
       right: 28px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &--gain::before {
+        background-image: url("../img/features/icon_cat_gain_tablet@2x.png");
+        background-size: 268px 200px;
+      }
     }
   }
 
@@ -73,7 +87,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 29px;
-  padding-left: 69px;
+  padding-left: 72px;
   font-family: $oswald-font;
 
   @include text-set(24px, 37px, 400);
@@ -85,8 +99,15 @@
     height: 53px;
     position: absolute;
     top: -9px;
-    left: 0;
+    left: 3px;
     background-image: url("../img/features/icon_cat_slim_mobile.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    &--slim::before {
+      background-image: url("../img/features/icon_cat_slim_mobile@2x.png");
+      background-size: 50px 53px;
+    }
   }
 
   &--gain::before {
@@ -94,9 +115,16 @@
     width: 67px;
     height: 50px;
     position: absolute;
-    top: -9px;
+    top: -6px;
     left: -7px;
     background-image: url("../img/features/icon_cat_gain_mobile.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    &--gain::before {
+      background-image: url("../img/features/icon_cat_gain_mobile@2x.png");
+      background-size: 67px 50px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -126,6 +154,13 @@
       background-image: url("../img/features/icon_cat_slim_desktop.png");
     }
 
+    @media (min-resolution: 2dppx) {
+      &--slim::before {
+        background-image: url("../img/features/icon_cat_slim_desktop@2x.png");
+        background-size: 100px 106px;
+      }
+    }
+
     &--gain::before {
       display: block;
       content: "";
@@ -135,6 +170,13 @@
       top: -30px;
       left: -20px;
       background-image: url("../img/features/icon_cat_gain_desktop.png");
+    }
+
+    @media (min-resolution: 2dppx) {
+      &--gain::before {
+        background-image: url("../img/features/icon_cat_gain_desktop@2x.png");
+        background-size: 134px 100px;
+      }
     }
   }
 }
@@ -179,6 +221,13 @@
     position: absolute;
     top: 7px;
     right: 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    &::after {
+      background-image: url("../img/features/icon_features_arrow@2x.png");
+      background-size: 32px 11px;
+    }
   }
 
   @media (min-width: $tablet-width) {

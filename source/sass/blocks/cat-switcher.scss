@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     width: 590px;
-    padding: 4px 10px 5px 11px;
+    padding: 4px 10px 4px 11px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,7 +75,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    background-color: $color-switcher-border;
+    background-color: $color-switcher-bar;
   }
 }
 
@@ -89,7 +89,7 @@
       background-color: $color-basic-green;
       border: 12px solid $color-bg-body;
       border-radius: 50%;
-      top: -50%;
+      top: -54%;
       left: 50%;
       transform: translateX(-50%);
       box-shadow: 0 0 0 2px $color-switcher-border;

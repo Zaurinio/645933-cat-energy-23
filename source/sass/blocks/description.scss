@@ -1,6 +1,6 @@
 .description {
   padding-top: 27px;
-  padding-bottom: 49px;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
@@ -74,16 +74,44 @@
     background-image: url("../img/description/icon_sheet.png");
   }
 
+  @media (min-resolution: 2dppx) {
+    &--ingredients::before {
+      background-image: url("../img/description/icon_sheet@2x.png");
+      background-size: 60px 60px;
+    }
+  }
+
   &--form::before {
     background-image: url("../img/description/icon_substance.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    &--form::before {
+      background-image: url("../img/description/icon_substance@2x.png");
+      background-size: 60px 60px;
+    }
   }
 
   &--application::before {
     background-image: url("../img/description/icon_cutlery.png");
   }
 
+  @media (min-resolution: 2dppx) {
+    &--application::before {
+      background-image: url("../img/description/icon_cutlery@2x.png");
+      background-size: 60px 60px;
+    }
+  }
+
   &--results::before {
     background-image: url("../img/description/icon_scales.png");
+  }
+
+  @media (min-resolution: 2dppx) {
+    &--results::before {
+      background-image: url("../img/description/icon_scales@2x.png");
+      background-size: 60px 60px;
+    }
   }
 
 
@@ -102,17 +130,46 @@
       background-image: url("../img/description/icon_sheet_tablet.png");
     }
 
+    @media (min-resolution: 2dppx) {
+      &--ingredients::before {
+        background-image: url("../img/description/icon_sheet_tablet@2x.png");
+        background-size: 80px 80px;
+      }
+    }
+
     &--form::before {
       background-image: url("../img/description/icon_substance_tablet.png");
+    }
+
+    @media (min-resolution: 2dppx) {
+      &--form::before {
+        background-image: url("../img/description/icon_substance_tablet@2x.png");
+        background-size: 80px 80px;
+      }
     }
 
     &--application::before {
       background-image: url("../img/description/icon_cutlery_tablet.png");
     }
 
+    @media (min-resolution: 2dppx) {
+      &--application::before {
+        background-image: url("../img/description/icon_cutlery_tablet@2x.png");
+        background-size: 80px 80px;
+      }
+    }
+
     &--results::before {
       background-image: url("../img/description/icon_scales_tablet.png");
     }
+
+    @media (min-resolution: 2dppx) {
+      &--results::before {
+        background-image: url("../img/description/icon_scales_tablet@2x.png");
+        background-size: 80px 80px;
+      }
+    }
+
 
     &::after {
       position: absolute;
