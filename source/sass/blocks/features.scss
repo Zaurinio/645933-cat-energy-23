@@ -40,36 +40,36 @@
       position: absolute;
       width: 200px;
       height: 211px;
-      background-image: url("../img/features/icon_cat_slim_tablet.png");
+      background-image: url("../img/features/icon_cat_slim_tablet.svg");
       background-repeat: no-repeat;
       top: 81px;
       right: 62px;
     }
 
-    @media (min-resolution: 2dppx) {
-      &--slim::before {
-        background-image: url("../img/features/icon_cat_slim_tablet@2x.png");
-        background-size: 200px 211px;
-      }
-    }
+    // @media (min-resolution: 2dppx) {
+    //   &--slim::before {
+    //     background-image: url("../img/features/icon_cat_slim_tablet@2x.png");
+    //     background-size: 200px 211px;
+    //   }
+    // }
 
     &--gain::before {
       content: "";
       position: absolute;
       width: 268px;
       height: 200px;
-      background-image: url("../img/features/icon_cat_gain_tablet.png");
+      background-image: url("../img/features/icon_cat_gain_tablet.svg");
       background-repeat: no-repeat;
       top: 91px;
       right: 28px;
     }
 
-    @media (min-resolution: 2dppx) {
-      &--gain::before {
-        background-image: url("../img/features/icon_cat_gain_tablet@2x.png");
-        background-size: 268px 200px;
-      }
-    }
+    // @media (min-resolution: 2dppx) {
+    //   &--gain::before {
+    //     background-image: url("../img/features/icon_cat_gain_tablet@2x.png");
+    //     background-size: 268px 200px;
+    //   }
+    // }
   }
 
   @media (min-width: $desktop-width) {
@@ -100,15 +100,15 @@
     position: absolute;
     top: -9px;
     left: 3px;
-    background-image: url("../img/features/icon_cat_slim_mobile.png");
+    background-image: url("../img/features/icon_cat_slim_mobile.svg");
   }
 
-  @media (min-resolution: 2dppx) {
-    &--slim::before {
-      background-image: url("../img/features/icon_cat_slim_mobile@2x.png");
-      background-size: 50px 53px;
-    }
-  }
+  // @media (min-resolution: 2dppx) {
+  //   &--slim::before {
+  //     background-image: url("../img/features/icon_cat_slim_mobile@2x.png");
+  //     background-size: 50px 53px;
+  //   }
+  // }
 
   &--gain::before {
     content: "";
@@ -117,15 +117,15 @@
     position: absolute;
     top: -6px;
     left: -7px;
-    background-image: url("../img/features/icon_cat_gain_mobile.png");
+    background-image: url("../img/features/icon_cat_gain_mobile.svg");
   }
 
-  @media (min-resolution: 2dppx) {
-    &--gain::before {
-      background-image: url("../img/features/icon_cat_gain_mobile@2x.png");
-      background-size: 67px 50px;
-    }
-  }
+  // @media (min-resolution: 2dppx) {
+  //   &--gain::before {
+  //     background-image: url("../img/features/icon_cat_gain_mobile@2x.png");
+  //     background-size: 67px 50px;
+  //   }
+  // }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
@@ -151,15 +151,15 @@
       position: absolute;
       top: -36px;
       left: 0;
-      background-image: url("../img/features/icon_cat_slim_desktop.png");
+      background-image: url("../img/features/icon_cat_slim_desktop.svg");
     }
 
-    @media (min-resolution: 2dppx) {
-      &--slim::before {
-        background-image: url("../img/features/icon_cat_slim_desktop@2x.png");
-        background-size: 100px 106px;
-      }
-    }
+    // @media (min-resolution: 2dppx) {
+    //   &--slim::before {
+    //     background-image: url("../img/features/icon_cat_slim_desktop@2x.png");
+    //     background-size: 100px 106px;
+    //   }
+    // }
 
     &--gain::before {
       display: block;
@@ -169,15 +169,15 @@
       position: absolute;
       top: -30px;
       left: -20px;
-      background-image: url("../img/features/icon_cat_gain_desktop.png");
+      background-image: url("../img/features/icon_cat_gain_desktop.svg");
     }
 
-    @media (min-resolution: 2dppx) {
-      &--gain::before {
-        background-image: url("../img/features/icon_cat_gain_desktop@2x.png");
-        background-size: 134px 100px;
-      }
-    }
+    // @media (min-resolution: 2dppx) {
+    //   &--gain::before {
+    //     background-image: url("../img/features/icon_cat_gain_desktop@2x.png");
+    //     background-size: 134px 100px;
+    //   }
+    // }
   }
 }
 
