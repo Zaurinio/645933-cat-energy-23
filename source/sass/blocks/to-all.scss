@@ -101,6 +101,14 @@
   color: $color-dark-grey;
   background-color: $color-basic-grey;
 
+  &:hover {
+    background-color: $color-catalog-border;
+  }
+
+  &:active {
+    color: $color-to-all-button-hover;
+  }
+
   @media (min-width: $tablet-width) {
     // padding-bottom: 9px;
   }

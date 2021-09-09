@@ -15,8 +15,6 @@
 
 .options__title-wrapper {
   border-top: 2px solid $color-basic-green;
-  // border-image: linear-gradient(to right, transparent 50%, $color-basic-green 50%, $color-basic-green 100%);
-  // border-image-slice: 10;
 }
 
 .options__wrapper {
@@ -168,6 +166,14 @@
 
   @include link-reset(none, uppercase);
   background-color: $color-basic-green;
+
+  &:hover {
+    background-color: $color-green-button-hover;
+  }
+
+  &:active {
+    color: $color-basic-white-hover;
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
