@@ -46,13 +46,6 @@
       right: 62px;
     }
 
-    // @media (min-resolution: 2dppx) {
-    //   &--slim::before {
-    //     background-image: url("../img/features/icon_cat_slim_tablet@2x.png");
-    //     background-size: 200px 211px;
-    //   }
-    // }
-
     &--gain::before {
       content: "";
       position: absolute;
@@ -63,13 +56,6 @@
       top: 91px;
       right: 28px;
     }
-
-    // @media (min-resolution: 2dppx) {
-    //   &--gain::before {
-    //     background-image: url("../img/features/icon_cat_gain_tablet@2x.png");
-    //     background-size: 268px 200px;
-    //   }
-    // }
   }
 
   @media (min-width: $desktop-width) {
@@ -103,13 +89,6 @@
     background-image: url("../img/features/icon_cat_slim_mobile.svg");
   }
 
-  // @media (min-resolution: 2dppx) {
-  //   &--slim::before {
-  //     background-image: url("../img/features/icon_cat_slim_mobile@2x.png");
-  //     background-size: 50px 53px;
-  //   }
-  // }
-
   &--gain::before {
     content: "";
     width: 67px;
@@ -119,13 +98,6 @@
     left: -7px;
     background-image: url("../img/features/icon_cat_gain_mobile.svg");
   }
-
-  // @media (min-resolution: 2dppx) {
-  //   &--gain::before {
-  //     background-image: url("../img/features/icon_cat_gain_mobile@2x.png");
-  //     background-size: 67px 50px;
-  //   }
-  // }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
@@ -154,13 +126,6 @@
       background-image: url("../img/features/icon_cat_slim_desktop.svg");
     }
 
-    // @media (min-resolution: 2dppx) {
-    //   &--slim::before {
-    //     background-image: url("../img/features/icon_cat_slim_desktop@2x.png");
-    //     background-size: 100px 106px;
-    //   }
-    // }
-
     &--gain::before {
       display: block;
       content: "";
@@ -171,13 +136,6 @@
       left: -20px;
       background-image: url("../img/features/icon_cat_gain_desktop.svg");
     }
-
-    // @media (min-resolution: 2dppx) {
-    //   &--gain::before {
-    //     background-image: url("../img/features/icon_cat_gain_desktop@2x.png");
-    //     background-size: 134px 100px;
-    //   }
-    // }
   }
 }
 
@@ -211,6 +169,10 @@
   @include link-reset(none, uppercase);
   color: $color-basic-black;
 
+  &:hover {
+    color: $color-features-link-hover;
+  }
+
   &::after {
     content: "";
     width: 32px;
@@ -241,5 +203,13 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 59px;
+  }
+}
+
+.features__link:hover::after {
+  background-image: url("../img/features/icon_features_arrow_hover.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/features/icon_features_arrow_hover@2x.png");
   }
 }

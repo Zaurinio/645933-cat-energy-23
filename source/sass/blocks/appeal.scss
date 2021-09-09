@@ -114,6 +114,14 @@
 
   @include link-reset (none, uppercase);
 
+  &:hover {
+    background-color: $color-green-button-hover;
+  }
+
+  &:active {
+    color: $color-basic-white-hover;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     padding: 17px 27px;

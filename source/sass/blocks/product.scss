@@ -177,6 +177,14 @@
   background-color: $color-basic-green;
   color: $color-basic-white;
 
+  &:hover {
+    background-color: $color-green-button-hover;
+  }
+
+  &:active {
+    color: $color-basic-white-hover;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 248px;
     margin-left: 2px;
