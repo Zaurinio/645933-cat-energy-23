@@ -22,4 +22,13 @@
     display: block;
     width: 100%;
   }
+
+  .main-navigation--nojs .site-list {
+    position: relative;
+  }
+
+  .main-navigation--nojs ~ .page-header__top .page-header__toggle--closed::before {
+      display: none;
+  }
 }
+

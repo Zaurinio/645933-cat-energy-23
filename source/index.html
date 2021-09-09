@@ -22,17 +22,13 @@
             <li class="site-list__item"><a class="site-list__link" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
-        <div class="page-header__top page-header__wrapper--top">
+        <div class="page-header__top page-header__wrapper-top">
           <a class="page-header__logo">
-            <svg class="page-header__logo-image page-header__logo-image--mobile" width="34" height="38">
-              <use xlink:href="img/sprite.svg#logo_page-header_mobile"></use>
-            </svg>
-            <svg class="page-header__logo-image page-header__logo-image--tablet" width="174" height="52">
-              <use xlink:href="img/sprite.svg#logo_page-header_tablet"></use>
-            </svg>
-            <svg class="page-header__logo-image page-header__logo-image--desktop" width="202" height="59">
-              <use xlink:href="img/sprite.svg#logo_page-header_desktop"></use>
-            </svg>
+            <picture>
+              <source media="(min-width: 1330px)" srcset="img/page-header/logo_page-header_desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/page-header/logo_page-header_tablet.svg">
+              <img class="page-header__logo-image" src="img/page-header/logo_page-header_mobile.svg" width="34" height="38" alt="Изображение сидящего двухцветного кота имеющего явный лишний вес">
+            </picture>
           </a>
           <a class="page-header__logo page-header__logo-text">
             <svg width="101" height="18">
@@ -97,7 +93,7 @@
         <div class="example__wrapper wrapper">
           <div class="example__info">
             <h2 class="example__title">Живой пример</h2>
-            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209прежнему спит по 16 часов в день.</p>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.</p>
             <div class="example__container">
               <dl class="example__stats stats-list">
                 <div class="stats-list__item">
@@ -126,7 +122,7 @@
                 <div class="cat-switcher__scale">
                   <div class="cat-switcher__bar"></div>
                 </div>
-                <button class="cat-switcher_toggle"></button>
+                <button class="cat-switcher__toggle"></button>
               </div>
               <button class="cat-switcher__button cat-switcher__button--before">Было</button>
               <button class="cat-switcher__button cat-switcher__button--after">Стало</button>

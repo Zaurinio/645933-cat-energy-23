@@ -151,6 +151,7 @@
 }
 
 .form__fieldset--contacts .form__title {
+  margin: 0;
   margin-bottom: 16px;
   max-width: 181px;
 
@@ -195,6 +196,8 @@
 }
 
 .form__fieldset--comments .form__title {
+  margin: 0;
+  display: inline-block;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -216,6 +219,8 @@
 }
 
 .form__fieldset--options .form__title {
+  display: inline-block;
+  margin: 0;
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
@@ -326,24 +331,6 @@
 
 .form__fieldset--contacts .form__item--email {
   position: relative;
-
-  // &::after {
-  //   content: "";
-  //   width: 20px;
-  //   height: 14px;
-  //   position: absolute;
-  //   background-image: url("../img/form/icon_email.svg");
-  //   background-repeat: no-repeat;
-  //   top: 16px;
-  //   right: 15px;
-  // }
-
-  // @media (min-width: $tablet-width) {
-  //   &::after {
-  //     top: 17px;
-  //     right: 17px;
-  //   }
-  // }
 }
 
 .form__icon-email {
@@ -702,4 +689,19 @@ input[type="tel"].form-invalid {
 
 .form-invalid:focus + .form__icon-phone {
   stroke: $color-form-error;
+}
+
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  opacity: 1;
 }

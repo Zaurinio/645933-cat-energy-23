@@ -108,8 +108,16 @@
   &:active {
     color: $color-to-all-button-hover;
   }
+}
+
+.to-all__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    // padding-bottom: 9px;
+    width: auto;
+    padding: 0;
+    margin: 0;
   }
 }

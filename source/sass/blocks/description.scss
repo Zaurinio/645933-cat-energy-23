@@ -170,7 +170,6 @@
       }
     }
 
-
     &::after {
       position: absolute;
       z-index: -1;
@@ -208,7 +207,6 @@
     @include text-set (16px, 24px, 400);
   }
 }
-
 
 .description__text br {
   display: none;

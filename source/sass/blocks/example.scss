@@ -140,21 +140,6 @@
   margin-bottom: 18px;
   margin-left: -20px;
 
-  // &--mobile {
-  //   width: 311px;
-  //   height: 232px;
-  //   margin-bottom: 18px;
-  //   margin-left: -20px;
-  // }
-
-  // &--tablet {
-  //   display: none;
-  // }
-
-  // &--desktop {
-  //   display: none;
-  // }
-
   @media (min-width: $tablet-width) {
     position: relative;
     margin-bottom: -75px;
@@ -162,42 +147,13 @@
     z-index: 1;
     width: 708px;
     height: 620px;
-
-    // &--mobile {
-    //   display: none;
-    // }
-
-    // &--tablet {
-    //   display: block;
-    //   position: relative;
-    //   margin-bottom: -71px;
-    //   z-index: 1;
-    // }
-
-    // &--desktop {
-    //   display: none;
-    // }
   }
 
   @media (min-width: $desktop-width) {
     width: 690px;
     height: 656px;
-    // display: block;
-    // position: relative;
     margin-bottom: -105px;
     margin-right: -40px;
     z-index: 1;
-
-    // &--tablet {
-    //   display: none;
-    // }
-
-    // &--desktop {
-    //   display: block;
-    //   position: relative;
-    //   margin-bottom: -102px;
-    //   margin-right: -40px;
-    //   z-index: 1;
-    // }
   }
 }
