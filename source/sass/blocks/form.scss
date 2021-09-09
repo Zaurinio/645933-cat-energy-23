@@ -348,17 +348,15 @@
 
 .form__icon-email {
   width: 20px;
-  height: 14px;
+  height: 15px;
   position: absolute;
   top: 16px;
   right: 15px;
   stroke: $color-special-dark-grey;
 
   @media (min-width: $tablet-width) {
-    &::after {
-      top: 17px;
-      right: 17px;
-    }
+    top: 18px;
+    right: 17px;
   }
 }
 
@@ -368,39 +366,20 @@
 
 .form__fieldset--contacts .form__item--phone {
   position: relative;
-
-  // &::after {
-  //   content: "";
-  //   width: 20px;
-  //   height: 20px;
-  //   position: absolute;
-  //   background-image: url("../img/form/icon_phone.svg");
-  //   background-repeat: no-repeat;
-  //   top: 12px;
-  //   right: 13px;
-  // }
-
-  // @media (min-width: $tablet-width) {
-  //   &::after {
-  //     top: 16px;
-  //     right: 16px;
-  //   }
-  // }
 }
 
 .form__icon-phone {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 12px;
+  top: 14px;
   right: 13px;
   fill: $color-basic-black;
 
   @media (min-width: $tablet-width) {
-    &::after {
-      top: 16px;
-      right: 16px;
-    }
+    width: 22px;
+    top: 16px;
+    right: 16px;
   }
 }
 
