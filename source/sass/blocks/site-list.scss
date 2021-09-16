@@ -80,12 +80,10 @@
 
   &:hover {
     opacity: 0.6;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   &:active {
     opacity: 0.3;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
   @media (min-width: $tablet-width) {
@@ -98,14 +96,6 @@
   @media (min-width: $desktop-width) {
     @include text-set (20px, 30px, 400);
     color: $color-basic-white;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
 
     &--catalog {
       color: $contacts-black;

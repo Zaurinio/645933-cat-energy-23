@@ -169,27 +169,20 @@
   @include link-reset(none, uppercase);
   color: $color-basic-black;
 
-  &:hover {
+  &:active {
     color: $color-features-link-hover;
   }
 
   &::after {
     content: "";
-    width: 32px;
-    height: 11px;
-    background-image: url("../img/features/icon_features_arrow.png");
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/features/icon_features_arrow.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 7px;
-    right: 0;
-  }
-
-  @media (min-resolution: 2dppx) {
-    &::after {
-      background-image: url("../img/features/icon_features_arrow@2x.png");
-      background-size: 32px 11px;
-    }
+    right: 8px;
   }
 
   @media (min-width: $tablet-width) {
@@ -207,9 +200,16 @@
 }
 
 .features__link:hover::after {
-  background-image: url("../img/features/icon_features_arrow_hover.png");
+  background-image: url("../img/features/icon_features_arrow_hover.svg");
+  width: 32px;
+  height: 12px;
+  right: 0;
+}
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/features/icon_features_arrow_hover@2x.png");
-  }
+.features__link:active::after {
+  background-image: url("../img/features/icon_features_arrow_hover.svg");
+  width: 32px;
+  height: 12px;
+  right: 0;
+  opacity: 0.3;
 }

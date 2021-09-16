@@ -182,14 +182,9 @@
   fill: $color-icon-social;
 }
 
-.page-footer__links:hover .page-footer__developer,
-.page-footer__links:hover .page-footer__developer-logo {
-  opacity: 0.8;
-}
-
 .page-footer__links:active .page-footer__developer,
 .page-footer__links:active .page-footer__developer-logo {
-  opacity: 0.6;
+  opacity: 0.3;
 }
 
 .page-footer__links:hover .page-footer__developer-logo svg {
